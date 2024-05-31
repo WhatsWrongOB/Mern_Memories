@@ -1,0 +1,437 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar Styling */
+
+nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  backdrop-filter: blur(6px);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo_heading {
+  font-size: 1.1rem;
+}
+
+.logo img {
+  width: 40px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.loginBtn {
+  padding: 10px 35px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.loginBtn:hover {
+  color: white;
+  background-color: black;
+}
+
+.registerBtn {
+  padding: 10px 33px;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  background-color: black;
+  cursor: pointer;
+}
+
+.registerBtn:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.profile img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 60px;
+  right: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  list-style: none;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f2f2f2;
+}
+
+/* Home Styling */
+
+.home {
+  width: 100vw;
+  min-height: 100vh;
+  max-height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.container {
+  width: 70%;
+  height: auto;
+}
+
+.header {
+  height: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search {
+  width: 220px;
+  height: 29px;
+  outline: none;
+}
+
+.innerContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cardSection {
+  width: 60%;
+  height: auto;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.formSection {
+  width: 32%;
+  height: 430px;
+  border: 1px solid rgb(0, 68, 255);
+}
+
+.noPost {
+  position: relative;
+  top: 35%;
+  left: 45%;
+}
+
+/* Card Styling */
+
+.card {
+  max-width: 255px;
+  min-width: 255px;
+  height: 299px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.card img {
+  width: 100%;
+  height: 50%;
+  border-radius: 10px 10px 0px 0px;
+  transition: all ease-in-out 0.25s;
+}
+
+.card img:hover{
+  transform: scale(1.1);
+}
+
+.imagePara {
+  color: white;
+  font-size: larger;
+  top: 0%;
+  left: 15px;
+  position: absolute;
+}
+
+.imageDate {
+  color: white;
+  font-size: large;
+  position: absolute;
+  top: 30px;
+  left: 15px;
+}
+
+.editBtn {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  color: white;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.editBtn:hover {
+  color: rgba(19, 6, 255, 0.951);
+}
+
+.cardContent {
+  padding: 0px 5px 0px 10px;
+}
+
+.cardHeading {
+  font-size: 1.2rem;
+}
+
+.cardBtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.like,
+.delete {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  color: #2b7bb2;
+  transition: all ease-in-out 0.2s;
+}
+
+.like:hover {
+  color: rgb(155, 255, 6);
+}
+
+.delete:hover {
+  color: red;
+}
+
+/* Form Styling */
+form {
+  text-align: center;
+}
+
+input {
+  padding: 10px;
+  width: 80%;
+  margin-top: 10px;
+}
+
+.message {
+  height: 70px;
+}
+
+.file {
+  margin-left: 18px;
+  display: block;
+}
+
+.formBtn {
+  margin-top: 15px;
+  padding: 10px 0px;
+  width: 84%;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.formBtn:hover {
+  background-color: goldenrod;
+}
+
+/* ======Login Form ========= */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login_heading {
+  font-size: 2.3rem;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.login_acc {
+  margin-top: 20px;
+}
+
+/* ------------- */
+
+.login {
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.form {
+  width: 500px;
+  height: 400px;
+  border: 1px solid #23ce6b;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.register_form {
+  height: 470px;
+}
+
+.login_upper {
+  height: 100px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.login_upper h1 {
+  font-size: 3rem;
+  margin: 0%;
+  font-family: "Times New Roman", serif;
+}
+
+.circle {
+  width: 180px;
+  height: 170px;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+
+.login_bottom {
+  display: flex;
+  justify-content: center;
+}
+
+.login_form {
+  margin-top: 20px;
+}
+
+.user_email,
+.user_pass {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 380px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  padding: 0px 20px;
+  border: 1px solid #23ce6b;
+  background-color: transparent;
+}
+
+.user_email input,
+.user_pass input {
+  font-size: 1rem;
+  width: 90%;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+.login_btn {
+  font-size: 1.1rem;
+  padding: 15px 20px;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  color: white;
+  background-color: #23ce6b;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.login_btn:hover {
+  background-color: #157c40;
+}
+
+.link_home {
+  text-align: center;
+  font-size: 1rem;
+}
